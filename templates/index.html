@@ -1,0 +1,20 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome - AgroSense</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dashboard-bg">
+    <div class="dashboard-container">
+        <h1>Welcome to <span class="highlight">AgroSense</span></h1>
+        <p>Smart Farming Tools at your Fingertips</p>
+
+        <div class="dashboard-buttons">
+            <a href="{{ url_for('login') }}" class="dashboard-button">🔐 Login</a>
+            <a href="{{ url_for('signup') }}" class="dashboard-button">📝 Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>

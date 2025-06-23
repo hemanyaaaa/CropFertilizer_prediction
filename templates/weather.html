@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Check Weather</h2>
+    <form method="POST">
+        <input type="text" name="city" placeholder="Enter city name" required>
+        <button type="submit">Get Weather</button>
+    </form>
+
+    {% if weather_data %}
+        <h3>Weather for {{ weather_data.name }}</h3>
+        <p>Temperature: {{ weather_data.main.temp }}°C</p>
+        <p>Condition: {{ weather_data.weather[0].description }}</p>
+    {% endif %}
+</body>
+</html>

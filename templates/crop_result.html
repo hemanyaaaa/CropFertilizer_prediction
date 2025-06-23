@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Recommendation</title>
+    <style>
+        body {
+            background: url('https://img.freepik.com/free-photo/green-tea-bud-leaves-green-tea-plantations-morning_335224-955.jpg?semt=ais_hybrid&w=740') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            text-align: center;
+            padding: 100px;
+        }
+        .result-box {
+            background-color: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 40px;
+            border-radius: 15px;
+        }
+        .result-box h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .result-box p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>🌿 Recommended Crop:</h2>
+        <p>🌍 City: {{ city }}</p>
+        <p>🌡 Temperature: {{ temperature }} °C</p>
+        <p>💧 Humidity: {{ humidity }} %</p>
+        <p>☁️ Condition: {{ condition }}</p>
+        <h3>🌱 Best Crop for these conditions: {{ crop }}</h3>
+        <a class="back-button" href="{{ url_for('index') }}">← Back to Home</a>
+    </div>
+</body>
+</html>

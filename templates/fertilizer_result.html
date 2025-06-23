@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fertilizer Result</title>
+    <style>
+        body {
+            background: url('https://st2.depositphotos.com/2977159/6297/i/450/depositphotos_62970837-stock-photo-hand-giving-chemical-fertilizer-to.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            text-align: center;
+            padding: 100px;
+        }
+        .result-box {
+            background-color: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 40px;
+            border-radius: 15px;
+        }
+        .result-box h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .result-box p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .fertilizer-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #43A047;
+            margin: 15px 0;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>✅ Fertilizer Recommendation</h2>
+        <p>🌍 City: {{ city }}</p>
+        <p>🌡 Temperature: {{ temperature }} °C</p>
+        <p>💧 Humidity: {{ humidity }}%</p>
+        <p>☁️ Condition: {{ condition }}</p>
+        <div class="fertilizer-name">🌱 Fertilizer Name: {{ fertilizer }}</div>
+        <a class="back-button" href="{{ url_for('index') }}">← Back to Home</a>
+    </div>
+</body>
+</html>

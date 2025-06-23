@@ -1,0 +1,195 @@
+/* ---------- COMMON DASHBOARD STYLES ---------- */
+body.dashboard-body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-box,
+.dashboard-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.dashboard-box h1,
+.dashboard-container h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.dashboard-box p,
+.dashboard-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.dashboard-box a,
+.dashboard-container .dashboard-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 25px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-box a:hover,
+.dashboard-container .dashboard-button:hover {
+    background-color: #388E3C;
+}
+
+.dashboard-container .logout-button {
+    display: inline-block;
+    margin-top: 20px;
+    color: #f44336;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dashboard-container .highlight {
+    color: #2e7d32;
+    font-weight: bold;
+}
+/* ---------- LOGIN PAGE STYLES ---------- */
+body.login-body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/bg.png'); /* same background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.login-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #388E3C;
+}
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.flash {
+    color: red;
+    margin-bottom: 15px;
+}
+.dashboard-container .back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    background-color: #9E9E9E; /* neutral gray */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.dashboard-container .back-button:hover {
+    background-color: #757575;
+}
+.back-top-button {
+    position: absolute;
+    top: 20px;
+    left: 30px; /* ✅ changed from right to left */
+    background-color: #607D8B; /* ✅ darker shade for better contrast */
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 50px; /* ✅ makes it round or pill-shaped */
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.back-top-button:hover {
+    background-color: #455A64; /* ✅ darker on hover */
+}
+
+
+.back-top-button:hover {
+    background-color: #757575;
+}
+.back-button {
+    background-color: #607D8B;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+.back-button:hover {
+    background-color: #455A64;
+}

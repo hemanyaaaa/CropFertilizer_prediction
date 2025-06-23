@@ -1,8 +1,6 @@
 ````  
 ```
 
-That causes Markdown to break — the **folder structure won't render correctly** on GitHub.
-
 ---
 
 ```markdown

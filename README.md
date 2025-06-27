@@ -62,16 +62,6 @@ CropFertilizer_prediction/
 
 ---
 
-### ✅ Now What?
 
-- Go to GitHub `README.md`
-- Click ✏️ Edit → **Replace your current structure with this**
-- Click ✅ **“Commit changes”**
-
-Let me know if you want to add:
-- 🔗 Live demo or deployment
-- 📸 Screenshots
-- 🪪 License section (MIT, etc.)  
-You’re literally at the finishing touch!
 
 ```
